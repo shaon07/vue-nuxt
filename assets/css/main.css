@@ -7,3 +7,54 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
+.main-button {
+  background: linear-gradient(90deg, #e855de 0.01%, #5400ee 100%);
+  padding: 8px 22px;
+  width: max-content;
+  border-radius: 6px;
+}
+
+.main-button-2 {
+  background: linear-gradient(90deg, #6892ff 0.01%, #1555b5 100%);
+  padding: 8px 22px;
+  width: max-content;
+  border-radius: 6px;
+}
+
+.secondary-button {
+  background: transparent;
+  padding: 8px 22px;
+  width: max-content;
+  border: 1px solid rgba(25, 118, 210, 0.5);
+  border-color: #e855de !important;
+  text-transform: capitalize;
+  color: #e855de;
+  border-radius: 6px;
+}
+
+.secondary-button-2 {
+  background: transparent;
+  padding: 8px 22px;
+  width: max-content;
+  border: 1px solid rgba(25, 118, 210, 0.5);
+  border-color: #295ae7 !important;
+  text-transform: capitalize;
+  color: #295ae7;
+  font-family: inherit;
+  border-radius: 6px;
+}
+
+.bg-primary {
+  background: linear-gradient(31deg, #251360 0%, #7a29a3 64.86%, #ce1aeb 100%);
+}
+
+.bg-secondary {
+  background: linear-gradient(
+    33deg,
+    #081848 0%,
+    #081848 0%,
+    #081848 0.01%,
+    #2e5cdf 100%
+  );
+}
