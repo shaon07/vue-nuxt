@@ -64,6 +64,11 @@
         class="bottomLayer"
       />
     </div>
+
+    <div class="w-full relative">
+      <img src="~/assets/images/city.png" alt="city" class="w-full h-full" />
+      <div class="city-footer-blur"></div>
+    </div>
   </div>
 </template>
 
@@ -219,6 +224,17 @@ import CircleRing from "../custom-icons/CircleRing.vue";
 
   .left-ring-blur {
     @extend .right-ring-blur;
+  }
+
+  .city-footer-blur {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    background: black;
+    filter: blur(10px);
   }
 }
 </style>
