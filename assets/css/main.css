@@ -1,6 +1,9 @@
 @import "tailwindcss";
 body {
-  background: linear-gradient(to right, #2d006e, #470466, #2d006e);
+  /* background: linear-gradient(to right, #2d006e, #470466, #2d006e); */
+  background: #0c0517;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   color: white;
+  width: 100%;
+  overflow-x: hidden;
 }

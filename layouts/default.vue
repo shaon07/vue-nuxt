@@ -1,7 +1,7 @@
 <template>
-  <div class="layout">
+  <div class="layout w-full">
     <Header />
-    <main class="content">
+    <main class="content w-full">
       <slot></slot>
     </main>
     <footer class="footer">
@@ -23,7 +23,6 @@ import Header from "../components/shared/Header.vue";
 
   .content {
     flex: 1;
-    max-width: 1400px;
     margin: 0 auto;
   }
 
