@@ -31,6 +31,7 @@ body {
   text-transform: capitalize;
   color: #e855de;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .secondary-button-2 {
@@ -43,6 +44,7 @@ body {
   color: #295ae7;
   font-family: inherit;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .bg-primary {
