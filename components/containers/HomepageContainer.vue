@@ -4,6 +4,7 @@
     <OurCourses />
     <MobileSection />
     <StorySection />
+    <OurMission />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import HeroSection from "../shared/HeroSection.vue";
 import MobileSection from "../shared/MobileSection.vue";
 import OurCourses from "../shared/OurCourses.vue";
+import OurMission from "../shared/OurMission.vue";
 import StorySection from "../shared/StorySection.vue";
 </script>
 
