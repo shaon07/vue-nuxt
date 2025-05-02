@@ -60,3 +60,7 @@ body {
     #2e5cdf 100%
   );
 }
+
+.linear-bg {
+  background: linear-gradient(97.64deg, #d8aaff 15.56%, #acb5ff 92.85%);
+}

@@ -1,9 +1,6 @@
 <template>
   <div class="w-full main-wrapper">
-    <center class="relative title-wrapper">
-      <h1 class="mx-auto title">Our Courses_</h1>
-      <div class="tiles"></div>
-    </center>
+    <Title title="Our Courses_" />
 
     <div class="card-wrapper">
       <Card variant="primary" />
@@ -25,31 +22,12 @@
 
 <script setup>
 import Card from "../UI/Card.vue";
+import Title from "../UI/Title.vue";
 </script>
 
 <style lang="scss" scoped>
 .main-wrapper {
   background: url("~/assets/images/grid-bg.png") no-repeat center center scroll;
-  .title-wrapper {
-    margin: 20px 0;
-    .title {
-      background: #fce6fa;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-align: center;
-      font-size: 64px;
-      font-weight: 700;
-      position: relative;
-    }
-
-    .tiles {
-      width: 100px;
-      height: 12px;
-      background: linear-gradient(90deg, #e855de 0.01%, #5400ee 100%);
-      margin-top: 2rem;
-    }
-  }
 
   .card-wrapper {
     position: relative;
