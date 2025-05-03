@@ -26,8 +26,8 @@
 </template>
 
 <script setup>
-import Card from "../UI/Card.vue";
-import Title from "../UI/Title.vue";
+import Card from "@/components/UI/Card.vue";
+import Title from "@/components/UI/Title.vue";
 </script>
 
 <style lang="scss" scoped>

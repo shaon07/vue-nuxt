@@ -1,17 +1,17 @@
 <template>
   <div class="layout w-full">
-    <!-- <Header /> -->
+    <Header />
     <main class="content w-full">
       <slot></slot>
     </main>
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
 <script setup>
 // no logic needed
-// import Footer from "~/components/shared/Footer.vue";
-// import Header from "~/components/shared/Header.vue";
+import Footer from "@/components/shared/Footer.vue";
+import Header from "@/components/shared/Header.vue";
 </script>
 
 <style lang="scss" scoped>

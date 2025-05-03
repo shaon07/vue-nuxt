@@ -28,8 +28,8 @@
 </template>
 
 <script setup>
-import MobileContent from "../UI/MobileContent.vue";
-import Title from "../UI/Title.vue";
+import MobileContent from "@/components/UI/MobileContent.vue";
+import Title from "@/components/UI/Title.vue";
 </script>
 
 <style lang="scss" scoped>

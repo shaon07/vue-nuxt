@@ -9,11 +9,11 @@
 </template>
 
 <script setup>
-import HeroSection from "../shared/HeroSection.vue";
-import MobileSection from "../shared/MobileSection.vue";
-import OurCourses from "../shared/OurCourses.vue";
-import OurMission from "../shared/OurMission.vue";
-import StorySection from "../shared/StorySection.vue";
+import HeroSection from "@/components/shared/HeroSection.vue";
+import MobileSection from "@/components/shared/MobileSection.vue";
+import OurCourses from "@/components/shared/OurCourses.vue";
+import OurMission from "@/components/shared/OurMission.vue";
+import StorySection from "@/components/shared/StorySection.vue";
 </script>
 
 <style lang="scss" scoped></style>

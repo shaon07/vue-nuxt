@@ -1,10 +1,15 @@
 import tailwindcss from "@tailwindcss/vite";
+import { resolve } from "pathe";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
+  alias: {
+    "@components": resolve(__dirname, "components"),
+    // You can add more aliases if needed
+  },
   modules: [
     "@nuxt/eslint",
     "@nuxt/fonts",

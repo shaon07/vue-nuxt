@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import HomepageContainer from "../components/containers/HomepageContainer.vue";
+import HomepageContainer from "@/components/containers/HomepageContainer.vue";
 </script>
 
 <style lang="scss">

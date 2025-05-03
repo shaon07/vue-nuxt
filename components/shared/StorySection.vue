@@ -8,8 +8,8 @@
 </template>
 
 <script setup>
-import TestimonialCards from "../UI/TestimonialCards.vue";
-import Title from "../UI/Title.vue";
+import TestimonialCards from "@/components/UI/TestimonialCards.vue";
+import Title from "@/components/UI/Title.vue";
 </script>
 
 <style lang="scss" scoped>
