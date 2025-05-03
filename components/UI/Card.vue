@@ -84,8 +84,6 @@ const props = defineProps({
     default: "primary",
   },
 });
-
-console.log(props.variant);
 </script>
 
 <style lang="scss" scoped>

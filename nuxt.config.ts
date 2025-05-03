@@ -6,10 +6,6 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  alias: {
-    "@components": resolve(__dirname, "components"),
-    // You can add more aliases if needed
-  },
   modules: [
     "@nuxt/eslint",
     "@nuxt/fonts",
@@ -27,5 +23,10 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    resolve: {
+      alias: {
+        "@components": resolve(__dirname, "components"),
+      },
+    },
   },
 });

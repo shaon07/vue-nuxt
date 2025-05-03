@@ -10,8 +10,8 @@
 
 <script setup>
 // no logic needed
-import Footer from "@/components/shared/Footer.vue";
-import Header from "@/components/shared/Header.vue";
+import Footer from "@components/shared/Footer.vue";
+import Header from "@components/shared/Header.vue";
 </script>
 
 <style lang="scss" scoped>
