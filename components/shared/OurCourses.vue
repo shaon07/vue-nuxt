@@ -10,11 +10,16 @@
         src="~/assets/images/triangle.svg"
         alt="triangle"
         class="top-triangle"
+        data-aos="fade-left"
+        data-aos-duration="1000"
       />
+
       <img
         src="~/assets/images/blue-square.svg"
         alt="bottom-blue-square"
         class="bottom-blue-square"
+        data-aos="fade-right"
+        data-aos-duration="1000"
       />
     </div>
   </div>

@@ -7,15 +7,17 @@
           src="~/assets/images/mobile.png"
           alt="App Mockup"
           class="max-w-[300px] rounded-3xl shadow-2xl border border-purple-600"
+          data-aos="fade-up"
         />
       </div>
 
       <!-- Right Side: Text Content -->
       <div class="text-center flex flex-col gap-8 items-start">
-        <h2 class="text-6xl font-bold">Our Mobile App</h2>
+        <h2 class="text-6xl font-bold" data-aos="fade-up">Our Mobile App</h2>
 
         <!-- Stats -->
         <div
+          data-aos="fade-up"
           class="flex flex-wrap justify-center md:justify-start gap-6 bg-gradient-to-r from-purple-600 to-pink-500 rounded-xl stats"
         >
           <div class="text-center border-r-2" style="padding-right: 16px">
@@ -39,14 +41,17 @@
         </div>
 
         <!-- Description -->
-        <p class="text-xl text-start">
+        <p class="text-xl text-start" data-aos="fade-up">
           Learn programming the fun way with the Programming Hero app!
           <br />
           Download now on the App Store or Google Play.
         </p>
 
         <!-- Store Buttons -->
-        <div class="flex justify-center md:justify-start gap-8">
+        <div
+          class="flex justify-center md:justify-start gap-8"
+          data-aos="fade-up"
+        >
           <a
             href="#"
             class="px-4 py-2 rounded-lg flex items-center gap-2 hover:opacity-80"

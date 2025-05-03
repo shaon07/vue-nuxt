@@ -1,5 +1,9 @@
 <template>
-  <center class="relative title-wrapper">
+  <center
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    class="relative title-wrapper"
+  >
     <h1 class="mx-auto title" :class="isLinearBg ? 'linear-bg' : 'title-bg'">
       {{ title }}
     </h1>

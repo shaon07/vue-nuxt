@@ -1,5 +1,6 @@
 <template>
   <div
+    data-aos="fade-up"
     class="rounded-3xl p-6 sm:p-10 md:p-12 flex gap-12 items-center shadow-lg"
     :class="props.variant === 'primary' ? 'flex-row' : 'flex-row-reverse'"
   >

@@ -44,7 +44,9 @@
       />
 
       <div class="relative">
-        <h1 class="text-7xl font-bold">Let’s Code_Your Career</h1>
+        <h1 data-aos="fade-up" class="text-7xl font-bold">
+          Let’s Code_Your Career
+        </h1>
         <div class="absolute top-0 left-0 right-0 title-wrapper">
           <span class="title"></span>
         </div>
@@ -65,7 +67,7 @@
       />
     </div>
 
-    <div class="w-full relative">
+    <div data-aos="fade-up" data-aos-duration="1200" class="w-full relative">
       <img src="~/assets/images/city.png" alt="city" class="w-full h-full" />
       <div class="city-footer-blur"></div>
     </div>

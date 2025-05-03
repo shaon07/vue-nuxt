@@ -6,12 +6,16 @@
         src="~/assets/images/circle.svg"
         alt="circle"
         class="absolute top-0 -left-72"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
       />
 
       <img
         src="~/assets/images/rocket.png"
         alt="rocket"
         class="absolute top-0 -right-72"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
       />
     </div>
 
