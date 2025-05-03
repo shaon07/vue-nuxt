@@ -11,7 +11,14 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
     "@nuxt/ui",
+    "@vesp/nuxt-fontawesome",
   ],
+  fontawesome: {
+    component: "FontAwesomeIcon",
+    icons: {
+      brands: ["faFacebookF", "faInstagram", "faYoutube", "faLinkedinIn"],
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },
