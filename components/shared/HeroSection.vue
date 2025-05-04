@@ -67,7 +67,7 @@
       />
     </div>
 
-    <div data-aos="fade-up" data-aos-duration="1200" class="w-full relative">
+    <div ref="citySection" class="w-full relative rellax" data-rellax-speed="7">
       <img src="~/assets/images/city.png" alt="city" class="w-full h-full" />
       <div class="city-footer-blur"></div>
     </div>
@@ -75,10 +75,30 @@
 </template>
 
 <script setup>
+import Rellax from "rellax";
+import { onMounted, ref } from "vue";
 import CircleRing from "../custom-icons/CircleRing.vue";
+
+const citySection = ref(null);
+
+onMounted(() => {
+  new Rellax(citySection.value, {
+    speed: -2, // Negative value to move slower than scroll
+    center: true, // Starts from center
+    wrapper: null, // Optional: apply within a wrapper
+    round: true, // Round to whole pixel values
+    vertical: true,
+    horizontal: false,
+  });
+});
 </script>
 
 <style lang="scss" scoped>
+.rellax {
+  will-change: transform;
+  transition: transform 0.2s ease-out;
+}
+
 .wrapper {
   margin: 10rem 0;
   position: relative;
