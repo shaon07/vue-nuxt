@@ -5,13 +5,27 @@
         <CircleRing />
       </div>
       <div class="left-ring-blur"></div>
+
+      <div
+        class="animate-spin-reverse left-small"
+        style="animation-duration: 8s"
+      >
+        <CircleRing />
+      </div>
     </div>
 
     <div class="svg-wrapper absolute -right-40">
-      <div class="animate-spin" style="animation-duration: 8s">
+      <div
+        class="animate-spin-reverse left-small"
+        style="animation-duration: 8s"
+      >
         <CircleRing />
       </div>
       <div class="right-ring-blur"></div>
+
+      <div class="animate-spin" style="animation-duration: 8s">
+        <CircleRing />
+      </div>
     </div>
 
     <div class="flex flex-col items-center gap-2 content-wrapper relative">
@@ -237,15 +251,23 @@ onMounted(() => {
     display: block;
     width: 300px;
     height: 250px;
-    background: #8b1cae;
+    background: rgb(194 0 255);
     top: 0;
     bottom: 0;
+    z-index: 2;
     position: absolute;
-    filter: blur(100px);
+    filter: blur(200px);
   }
 
   .left-ring-blur {
     @extend .right-ring-blur;
+  }
+
+  .left-small {
+    animation-duration: 8s;
+    position: absolute;
+    top: 0;
+    scale: 0.65;
   }
 
   .city-footer-blur {

@@ -1,4 +1,19 @@
 @import "tailwindcss";
+
+@layer utilities {
+  @keyframes spin-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  .animate-spin-reverse {
+    animation: spin-reverse 1s linear infinite;
+  }
+}
 body {
   /* background: linear-gradient(to right, #2d006e, #470466, #2d006e); */
   background: #0c0517;

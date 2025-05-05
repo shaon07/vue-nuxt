@@ -1,7 +1,7 @@
 <template>
   <div class="main-wrapper">
     <div class="relative w-full title-wrapper">
-      <Title title="Are you absolute_ Beginner?" isLinearBg="true" />
+      <Title title="Are you absolute_ Beginner?" :isLinearBg="true" />
       <img
         src="~/assets/images/circle.svg"
         alt="circle"

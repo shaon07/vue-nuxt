@@ -17,7 +17,7 @@
   </div>
 
   <div class="content">
-    <Title is-linear-bg="true" title="Our Mission_" />
+    <Title :isLinearBg="true" title="Our Mission_" />
     <WhyWhatHow />
   </div>
 </template>

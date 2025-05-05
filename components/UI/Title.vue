@@ -1,5 +1,5 @@
 <template>
-  <center
+  <div
     data-aos="fade-up"
     data-aos-duration="1000"
     class="relative title-wrapper"
@@ -8,7 +8,7 @@
       {{ title }}
     </h1>
     <div class="tiles"></div>
-  </center>
+  </div>
 </template>
 
 <script setup>
@@ -28,6 +28,8 @@ const { title, isLinearBg } = defineProps({
 <style lang="scss" scoped>
 .title-wrapper {
   margin: 20px 0;
+  width: 100%;
+  text-align: center;
 
   .title-bg {
     background: #fce6fa;
@@ -46,7 +48,7 @@ const { title, isLinearBg } = defineProps({
     width: 100px;
     height: 12px;
     background: linear-gradient(90deg, #e855de 0.01%, #5400ee 100%);
-    margin-top: 2rem;
+    margin: 2rem auto 0;
   }
 }
 </style>

@@ -5,9 +5,9 @@
       delay: 3000,
       disableOnInteraction: false,
     }"
-    slides-per-view="4"
+    :slides-per-view="4"
     :modules="modules"
-    loop="true"
+    :loop="true"
     class="mySwiper"
   >
     <SwiperSlide v-for="(card, index) in cards" :key="index">

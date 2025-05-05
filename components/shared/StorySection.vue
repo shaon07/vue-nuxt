@@ -1,6 +1,6 @@
 <template>
   <div class="w-full main-wrapper">
-    <Title title="Success_ Story" is-linear-bg="true" />
+    <Title title="Success_ Story" :isLinearBg="true" />
     <div class="card-wrapper">
       <TestimonialCards />
     </div>
