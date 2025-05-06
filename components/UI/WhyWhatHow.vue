@@ -18,31 +18,22 @@
     <div class="w-full flex flex-col gap-4">
       <div class="flex items-start gap-1">
         <h2 class="font-medium text-lg">
-          <span class="text-pink-400 font-semibold">Why: </span>We are
-          passionate about empowering individuals to transform their lives
-          through the power of coding. We believe that everyone should have
-          access to high-quality, affordable coding education, regardless of
-          their background or experience.
+          <span class="text-pink-400 font-semibold">Why: </span>
+          <span class="first-text"></span>
         </h2>
       </div>
 
       <div class="flex items-start gap-1">
         <h2 class="font-medium text-lg">
-          <span class="text-pink-400 font-semibold">Why: </span>We are
-          passionate about empowering individuals to transform their lives
-          through the power of coding. We believe that everyone should have
-          access to high-quality, affordable coding education, regardless of
-          their background or experience.
+          <span class="text-pink-400 font-semibold">Why: </span
+          ><span class="second-text"></span>
         </h2>
       </div>
 
       <div class="flex items-start gap-1">
         <h2 class="font-medium text-lg">
-          <span class="text-pink-400 font-semibold">Why: </span>We are
-          passionate about empowering individuals to transform their lives
-          through the power of coding. We believe that everyone should have
-          access to high-quality, affordable coding education, regardless of
-          their background or experience.
+          <span class="text-pink-400 font-semibold">Why: </span
+          ><span class="third-text"></span>
         </h2>
       </div>
     </div>
@@ -50,10 +41,34 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import Typed from "typed.js";
+import { onMounted, ref } from "vue";
 
 const imgSrc = "/images/team.jpg";
 const show = ref(false);
+
+onMounted(() => {
+  new Typed(".first-text", {
+    strings: [
+      "We are passionate about empowering individuals to transform their lives through the power of coding. We believe that everyone should have access to high-quality, affordable coding education, regardless of their background or experience.",
+    ],
+    typeSpeed: 30,
+  });
+
+  new Typed(".second-text", {
+    strings: [
+      "We are passionate about empowering individuals to transform their lives through the power of coding. We believe that everyone should have access to high-quality, affordable coding education, regardless of their background or experience.",
+    ],
+    typeSpeed: 30,
+  });
+
+  new Typed(".third-text", {
+    strings: [
+      "We are passionate about empowering individuals to transform their lives through the power of coding. We believe that everyone should have access to high-quality, affordable coding education, regardless of their background or experience.",
+    ],
+    typeSpeed: 30,
+  });
+});
 </script>
 
 <style scoped>
