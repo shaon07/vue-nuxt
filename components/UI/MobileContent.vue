@@ -21,7 +21,15 @@
           class="flex flex-wrap justify-center md:justify-start gap-6 bg-gradient-to-r from-purple-600 to-pink-500 rounded-xl stats"
         >
           <div class="text-center border-r-2" style="padding-right: 16px">
-            <p class="text-5xl font-bold">1.5M+</p>
+            <p class="text-5xl font-bold flex items-center">
+              <ClientOnly>
+                <AnimatedCounter
+                  :value="15"
+                  :duration="1000"
+                  class="counter"
+                /> </ClientOnly
+              >M+
+            </p>
             <p class="text-xl">Worldwide Learners!</p>
           </div>
 
@@ -29,13 +37,24 @@
             <p
               class="text-5xl font-bold flex justify-center items-center gap-1"
             >
-              4.7 <span>⭐</span>
+              <ClientOnly>
+                <AnimatedCounter :value="4" :duration="1000" class="counter" />
+              </ClientOnly>
+              <span>⭐</span>
             </p>
             <p class="text-xl">Positive Reviews</p>
           </div>
 
           <div class="text-center">
-            <p class="text-5xl font-bold">12+</p>
+            <p class="text-5xl font-bold flex items-center">
+              <ClientOnly>
+                <AnimatedCounter
+                  :value="500"
+                  :duration="1000"
+                  class="counter"
+                /> </ClientOnly
+              >+
+            </p>
             <p class="text-xl">Skill based Courses</p>
           </div>
         </div>

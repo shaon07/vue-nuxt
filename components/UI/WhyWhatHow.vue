@@ -5,10 +5,13 @@
     <!-- Left: Image -->
     <div class="flex-shrink-0 w-full lg:w-1/2">
       <img
-        src="~/assets/images/team.jpg"
+        :src="imgSrc"
         alt="Group Photo"
-        class="rounded-3xl w-full object-cover shadow-lg h-[350px]"
+        class="rounded-3xl w-full object-cover shadow-lg h-[350px] cursor-pointer"
+        @click="show = true"
       />
+
+      <VueEasyLightbox :visible="show" :imgs="[imgSrc]" @hide="show = false" />
     </div>
 
     <!-- Right: Text content -->
@@ -47,7 +50,10 @@
 </template>
 
 <script setup>
-// No script logic needed unless dynamic content is added
+import { ref } from "vue";
+
+const imgSrc = "/images/team.jpg";
+const show = ref(false);
 </script>
 
 <style scoped>

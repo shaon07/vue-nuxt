@@ -11,38 +11,19 @@
     class="mySwiper"
   >
     <SwiperSlide v-for="(card, index) in cards" :key="index">
-      <div
-        class="bg-gradient-to-br from-purple-900 to-indigo-800 text-white rounded-lg shadow-lg card"
-      >
-        <div class="flex items-start justify-between mb-4">
-          <span class="text-4xl">“</span>
-          <button class="main-button" style="padding: 8px">
-            {{ card.rating }}
-          </button>
-        </div>
-
-        <p class="text-xl mb-4">
-          {{ card.quote }} <a href="#" class="text-blue-300">...more</a>
-        </p>
-
-        <div class="flex items-center gap-4 image-wrapper">
-          <img
-            :src="card.image"
-            alt="Profile"
-            class="w-32 h-auto rounded-full mr-4"
-          />
-          <div>
-            <h3 class="font-semibold">{{ card.name }}</h3>
-            <p class="text-lg text-gray-300">{{ card.title }}</p>
-          </div>
-        </div>
-      </div>
+      <UserCard
+        :name="card.name"
+        :title="card.title"
+        :quote="card.quote"
+        :image="card.image"
+        :rating="card.rating"
+      />
     </SwiperSlide>
   </Swiper>
 </template>
 
-<script setup>
-// Swiper imports
+<script lang="ts" setup>
+import UserCard from "@/components/UI/UserCard.vue";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -104,8 +85,5 @@ const cards = [
 .card {
   padding: 2rem;
   margin: auto;
-}
-.image-wrapper {
-  margin-top: 3rem;
 }
 </style>
