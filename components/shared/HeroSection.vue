@@ -70,7 +70,15 @@
         We're on a mission to provide personalized learning and empower
         individuals to kick-start their careers.
       </p>
-      <button class="button">Explore</button>
+
+      <button
+        v-wave="{
+          color: 'no-repeat url(/images/explore-btn.svg) 0 0 / cover',
+        }"
+        class="button"
+      >
+        Explore
+      </button>
     </div>
 
     <div class="w-full h-[185px] relative !mt-[50px]">

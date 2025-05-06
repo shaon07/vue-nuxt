@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@vesp/nuxt-fontawesome",
     "nuxt-aos",
+    "v-wave/nuxt"
   ],
   fontawesome: {
     component: "FontAwesomeIcon",
