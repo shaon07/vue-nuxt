@@ -1,14 +1,11 @@
 <template>
   <Swiper
     :spaceBetween="30"
-    :autoplay="{
-      delay: 3000,
-      disableOnInteraction: false,
-    }"
     :slides-per-view="4"
     :modules="modules"
     :loop="true"
     class="mySwiper"
+    :autoplay="true"
   >
     <SwiperSlide v-for="(card, index) in cards" :key="index">
       <UserCard
@@ -17,6 +14,7 @@
         :quote="card.quote"
         :image="card.image"
         :rating="card.rating"
+        :type="card.type"
       />
     </SwiperSlide>
   </Swiper>
@@ -32,6 +30,8 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 
 const modules = [Autoplay, Pagination, Navigation];
 
+type type = "pink" | "blue" | "green" | "yellow";
+
 const cards = [
   {
     name: "Jane Doe",
@@ -39,6 +39,7 @@ const cards = [
     quote: "This app completely changed the way I learn programming.",
     rating: "5.0",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
+    type: "pink" as type,
   },
   {
     name: "John Smith",
@@ -46,6 +47,7 @@ const cards = [
     quote: "Simple, fun, and effective. Totally worth it!",
     rating: "4.8",
     image: "https://randomuser.me/api/portraits/men/35.jpg",
+    type: "blue" as type,
   },
   {
     name: "Aisha Khan",
@@ -53,6 +55,7 @@ const cards = [
     quote: "The courses are very engaging and well-structured.",
     rating: "4.9",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
+    type: "green" as type,
   },
   {
     name: "Rahul Patel",
@@ -60,6 +63,7 @@ const cards = [
     quote: "Well-curated content with real-world use cases!",
     rating: "4.7",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
+    type: "yellow" as type,
   },
   {
     name: "Rahul Patel",
@@ -67,6 +71,7 @@ const cards = [
     quote: "Well-curated content with real-world use cases!",
     rating: "4.7",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
+    type: "green" as type,
   },
   {
     name: "Rahul Patel",
@@ -74,6 +79,7 @@ const cards = [
     quote: "Well-curated content with real-world use cases!",
     rating: "4.7",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
+    type: "blue" as type,
   },
 ];
 </script>
@@ -81,9 +87,5 @@ const cards = [
 <style scoped>
 .mySwiper {
   padding: 0 1rem;
-}
-.card {
-  padding: 2rem;
-  margin: auto;
 }
 </style>
