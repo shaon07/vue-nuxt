@@ -98,4 +98,8 @@ const props = defineProps({
     gap: 1rem;
   }
 }
+
+button {
+  cursor: pointer;
+}
 </style>

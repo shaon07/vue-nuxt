@@ -5,7 +5,8 @@
     :modules="modules"
     :loop="true"
     class="mySwiper"
-    :autoplay="true"
+    :autoplay="{ delay: 3000 }"
+    :speed="1000"
   >
     <SwiperSlide v-for="(card, index) in cards" :key="index">
       <UserCard

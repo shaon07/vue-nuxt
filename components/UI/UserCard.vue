@@ -1,14 +1,14 @@
 <template>
   <div class="relative text-white shadow-lg card">
     <div class="card-bg rounded-lg" :class="bgType[card.type]"></div>
-    <div class="flex items-start justify-between mb-4">
+    <div class="flex items-start justify-between" style="margin-bottom: 1rem">
       <span class="text-4xl">“</span>
       <button :class="buttonType[card.type]" style="padding: 8px">
         {{ card.rating }}
       </button>
     </div>
 
-    <p class="text-xl mb-4">
+    <p class="text-lg mb-4">
       {{ card.quote }} <a href="#" class="text-blue-300">...more</a>
     </p>
 
@@ -16,7 +16,7 @@
       <img
         :src="card.image"
         alt="Profile"
-        class="w-32 h-auto rounded-full mr-4 cursor-pointer"
+        class="w-[78px] h-auto rounded-full mr-4 cursor-pointer"
         @click="show = true"
       />
 
@@ -26,8 +26,8 @@
         @hide="show = false"
       />
       <div>
-        <h3 class="font-semibold">{{ card.name }}</h3>
-        <p class="text-lg text-gray-300">{{ card.title }}</p>
+        <h3 class="text-base font-semibold">{{ card.name }}</h3>
+        <p class="text-base text-gray-300">{{ card.title }}</p>
       </div>
     </div>
   </div>
@@ -96,7 +96,7 @@ const buttonType = {
   }
 
   p {
-    margin-top: 1rem;
+    margin-top: 2px;
   }
 }
 .image-wrapper {
