@@ -40,14 +40,14 @@
       class="w-full md:w-1/2 text-white flex flex-col gap-4"
     >
       <h1
-        class="text-3xl md:text-4xl font-bol mb-4"
         :class="
-          props.variant === 'primary' ? 'text-purple-400' : 'text-blue-400'
+          props.variant === 'primary' ? 'course-title' : 'course-title-two'
         "
       >
         Kickstart your journey in <br />
-        <span class="text-white">Web Development</span>
+        <span>Web Development</span>
       </h1>
+
       <p class="text-gray-300 mb-6">
         Welcome to Programming Hero! Dive into the world of modern web
         development with a focus on MERN stack - MongoDB, Express.js, React, and
@@ -101,5 +101,30 @@ const props = defineProps({
 
 button {
   cursor: pointer;
+}
+
+.course-title {
+  background: linear-gradient(90deg, #e855de -26.01%, #5400ee 121.7%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.course-title-two {
+  background: linear-gradient(70deg, #4b75f1 9.27%, #3065ff 92.91%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: inline-block;
+  text-align: end;
 }
 </style>
